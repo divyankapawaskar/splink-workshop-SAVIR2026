@@ -1,60 +1,90 @@
-<main class="container">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>splink-workshop-SAVIR2026 — Workshop Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <!-- Title -->
-  <section class="title-block">
-    <h1>Probabilistic Linkage Using Splink<br/>with App to Codes</h1>
-    <hr class="divider" />
-  </section>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="page-title">Probabilistic Linkage Using Splink<br><span class="subtitle">with App to Codes</span></h1>
+      <div class="blue-rule"></div>
 
-  <!-- Logos row -->
-  <section class="logos-row">
-    <div class="logo-item">
-      <img src="assets/iowa.png" alt="University of Iowa" />
-      <span>Iowa</span>
+      <div class="logo-row" aria-label="Affiliated organizations">
+        <div class="logo-item">
+          <img src="assets/iowa.png" alt="University of Iowa logo">
+          <span>Iowa</span>
+        </div>
+
+        <div class="logo-item">
+          <img src="assets/nysdoh.png" alt="New York State Department of Health logo">
+          <span>NYS</span>
+        </div>
+
+        <div class="logo-item">
+          <img src="assets/columbia.png" alt="Columbia Mailman School of Public Health logo">
+          <span>Columbia</span>
+        </div>
+      </div>
     </div>
-    <div class="logo-item">
-      <img src="assets/nysdoh.png" alt="New York State Department of Health" />
-      <span>NYS</span>
-    </div>
-    <div class="logo-item">
-      <img src="assets/columbia.png" alt="Columbia University" />
-      <span>Columbia</span>
-    </div>
-  </section>
+  </header>
 
-  <!-- Welcome -->
-  <section class="welcome">
-    <p>
-      <strong>Welcome to the workshop!</strong><br/>
-      This page is a central hub for all workshop materials.
-    </p>
-  </section>
+  <main class="container">
+    <section class="welcome">
+      <p class="welcome-text">
+        <strong>Welcome to the workshop!</strong><br>
+        This page is a central hub for all workshop materials.
+      </p>
 
-  <hr class="divider" />
+      <nav class="jump" aria-label="Jump to section">
+        <a href="#setup">Setup</a>
+        <a href="#code">Code</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#slides">Slides</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
 
-  <!-- Setup -->
-  <section id="setup" class="section">
-    <h2>Setup</h2>
-    <p>Description / info about the setup.</p>
-    <a class="btn" href="PASTE_SETUP_DOC_LINK" target="_blank">Guide</a>
-  </section>
+    <div class="blue-rule"></div>
 
-  <!-- Code -->
-  <section id="code" class="section">
-    <h2>Code</h2>
-    <p>Information about the code used in this workshop.</p>
-    <a class="btn" href="PASTE_CODE_DOC_LINK" target="_blank">Code Doc</a>
-  </section>
+    <section id="setup" class="block">
+      <h2>Setup</h2>
+      <p class="desc">Description / info about the setup.</p>
+      <a class="btn" href="PASTE_SETUP_DOC_LINK" target="_blank" rel="noreferrer">Guide</a>
+    </section>
 
-  <!-- Placeholder for future sections -->
-  <p class="note">More sections will be added here.</p>
+    <section id="code" class="block">
+      <h2>Code</h2>
+      <p class="desc">All workshop code is shared via Google Docs / Drive.</p>
+      <a class="btn" href="PASTE_CODE_DOC_LINK" target="_blank" rel="noreferrer">Code Doc</a>
+    </section>
 
-  <hr class="divider" />
+    <section id="datasets" class="block">
+      <h2>Datasets</h2>
+      <p class="desc">Download datasets from the Drive folder below.</p>
+      <a class="btn" href="PASTE_DATA_FOLDER_LINK" target="_blank" rel="noreferrer">Datasets Folder</a>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>If you have questions during the workshop, please reach out.</p>
-  </section>
+    <section id="slides" class="block">
+      <h2>Slides</h2>
+      <p class="desc">Slides will be released during / after the workshop.</p>
+      <a class="btn btn-outline" href="PASTE_SLIDES_LINK_WHEN_READY" target="_blank" rel="noreferrer">Slides</a>
+    </section>
 
-</main>
+    <div class="blue-rule"></div>
+
+    <section id="contact" class="block">
+      <h2>Contact</h2>
+      <p class="desc">If anything breaks during the workshop, please reach out.</p>
+      <p class="contact-line">Presenter: <strong>Your Name</strong> · Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+    </section>
+
+    <footer class="footer">
+      <span>Last updated: <strong><!-- you can type date here --></strong></span>
+    </footer>
+  </main>
+</body>
+</html>
