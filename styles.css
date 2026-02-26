@@ -1,0 +1,63 @@
+:root{
+  --bg:#0b1220;
+  --card:#111a2e;
+  --text:#eaf0ff;
+  --muted:#b9c3dd;
+  --accent:#4f8cff;   /* change to your company color */
+  --accent2:#22c55e;  /* optional secondary */
+  --border:rgba(255,255,255,.08);
+  --radius:18px;
+  --max:980px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:linear-gradient(180deg, #070b14, var(--bg));
+  color:var(--text);
+  line-height:1.5;
+}
+
+.container{max-width:var(--max); margin:0 auto; padding:24px}
+.hero{border-bottom:1px solid var(--border)}
+.brand-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap; padding:20px 0}
+.logo{height:44px; width:auto}
+.brand-text h1{margin:0; font-size:34px}
+.brand-text p{margin:6px 0 0; color:var(--muted)}
+
+.nav{display:flex; gap:10px; flex-wrap:wrap; padding:0 0 22px}
+.nav a{
+  color:var(--text);
+  text-decoration:none;
+  border:1px solid var(--border);
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.02);
+}
+.nav a:hover{border-color:rgba(255,255,255,.18)}
+
+.card{
+  margin:18px 0;
+  padding:18px 18px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.03);
+}
+.card h2{margin:0 0 10px; font-size:22px}
+
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#06101f;
+  padding:10px 14px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+}
+.btn.secondary{background:rgba(255,255,255,.1); color:var(--text); border:1px solid var(--border)}
+.muted{color:var(--muted)}
+.footer{padding:24px 0 10px}
+.collab{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.logo-sm{height:26px; width:auto; opacity:.95}
