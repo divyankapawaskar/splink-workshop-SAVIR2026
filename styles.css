@@ -149,21 +149,39 @@ a:hover {
   flex: 1;
 }
 
-/* Conference logo (top right) */
-.conference-logo {
-  max-height: 70px;
-  width: auto;
+/* Keep header as positioning reference */
+.header { position: relative; }
+
+/* Force the right area to sit at the top-right */
+.header-right{
+  position: absolute;
+  top: 18px;        /* adjust up/down */
+  right: 24px;      /* adjust left/right */
 }
 
-/* Mobile adjustment */
-@media (max-width: 700px) {
-  .header-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+/* Control logo size */
+.conference-logo{
+  height: 48px;     /* MAIN SIZE CONTROL */
+  width: auto;
+  max-width: 180px; /* prevents giant wide logos */
+  object-fit: contain;
+}
 
-  .conference-logo {
+/* Give the left header area breathing room so it doesn't collide with the logo */
+.header-left{
+  padding-right: 220px;  /* increase if your logo is wide */
+}
+
+@media (max-width: 700px){
+  .header-right{
+    position: static;     /* stop absolute on small screens */
     margin-top: 10px;
-    max-height: 55px;
+  }
+  .header-left{
+    padding-right: 0;
+  }
+  .conference-logo{
+    height: 42px;
+    max-width: 220px;
   }
 }
