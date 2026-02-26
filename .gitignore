@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.env
+*.log
+*.tmp
+.Rhistory
+.RData
+.Rproj.user/
