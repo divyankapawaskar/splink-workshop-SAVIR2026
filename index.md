@@ -1,36 +1,74 @@
 # PROBABILISTIC LINKAGE USING SPLINK WITH APPLICATION TO CRASH OUTCOMES DATA EVALUATION SYSTEM (CODES)
 #SAVIR2026
 
-# Workshop Portal
-Welcome! This page is the central hub for all workshop materials.
+# splink-workshop-SAVIR2026
 
-## Jump to a section
+## Workshop Portal
+This page is the central hub for all workshop materials.
+Please bookmark it.
+
+---
+
+## Jump to section
 - [Setup](#setup)
-- [Datasets](#datasets)
 - [Code](#code)
+- [Datasets](#datasets)
 - [Slides](#slides)
 - [Resources](#resources)
-- [Contact](#contact)
 
 ---
 
 ## Setup
 <a id="setup"></a>
 
-**Environment setup**
-- Step-by-step guide (Google Doc): **PASTE LINK HERE**
-- Troubleshooting notes: **PASTE LINK HERE** (optional)
+All setup instructions are available here:
+
+👉 **Setup guide (Google Doc):**  
+PASTE GOOGLE DOC LINK HERE
 
 ---
-## Datasets
-<a id="datasets"></a>
 
 ## Code
 <a id="code"></a>
 
-**Full code (Google Doc):** **PASTE LINK HERE**
+All code for this workshop is provided via Google Docs / Drive.
 
-### Example snippet (copy/paste)
-```r
-# Paste a small snippet here when ready
-print("Hello workshop")
+👉 **Workshop code (Google Doc):**  
+PASTE CODE DOC LINK HERE
+
+> Please make a copy if you want to edit.
+
+---
+
+## Datasets
+<a id="datasets"></a>
+
+Download datasets from the Drive folder below:
+
+👉 **Datasets (Google Drive folder):**  
+PASTE DRIVE FOLDER LINK HERE
+
+---
+
+## Slides
+<a id="slides"></a>
+
+Slides will be released here during / after the workshop.
+
+👉 **Slides (Google Drive):**  
+PASTE SLIDES LINK WHEN READY
+
+---
+
+## Resources
+<a id="resources"></a>
+
+Additional references:
+
+- Paper / link 1  
+- Tool / link 2  
+
+---
+
+## Contact
+If you run into issues during the workshop, raise your hand or message me.
