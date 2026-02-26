@@ -137,61 +137,35 @@ a:hover {
   font-size: 0.95em;
 }
 
-/* ===== Header layout ===== */
+/* ===== HEADER LAYOUT ===== */
 .header-row {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
+  align-items: flex-start; /* align logo with top of title */
+  gap: 30px;
 }
 
-.header-left {
+/* Left conference logo */
+.conference-left {
+  flex-shrink: 0;
+}
+
+.conference-logo {
+  height: 110px;   /* adjust size here */
+  width: auto;
+}
+
+/* Right title area */
+.header-main {
   flex: 1;
 }
 
-/* Keep header as positioning reference */
-.header { position: relative; }
-
-/* Force the right area to sit at the top-right */
-.header-right{
-  position: absolute;
-  top: 18px;        /* adjust up/down */
-  right: 24px;      /* adjust left/right */
-}
-
-/* Keep header as positioning reference */
-.header { position: relative; }
-
-/* Force the right area to sit at the top-right */
-.header-right{
-  position: absolute;
-  top: 18px;        /* adjust up/down */
-  right: 24px;      /* adjust left/right */
-}
-
-/* Control logo size */
-.conference-logo{
-  height: 48px;     /* MAIN SIZE CONTROL */
-  width: auto;
-  max-width: 180px; /* prevents giant wide logos */
-  object-fit: contain;
-}
-
-/* Give the left header area breathing room so it doesn't collide with the logo */
-.header-left{
-  padding-right: 220px;  /* increase if your logo is wide */
-}
-
-@media (max-width: 700px){
-  .header-right{
-    position: static;     /* stop absolute on small screens */
-    margin-top: 10px;
+/* Mobile adjustment */
+@media (max-width: 900px) {
+  .header-row {
+    flex-direction: column;
   }
-  .header-left{
-    padding-right: 0;
-  }
-  .conference-logo{
-    height: 42px;
-    max-width: 220px;
+
+  .conference-logo {
+    height: 80px;
   }
 }
