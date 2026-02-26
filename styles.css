@@ -1,182 +1,138 @@
-/* ===== Brand palette ===== */
-:root{
-  --purple: #5b3a8e; /* NYS purple */
-  --blue: #1f4e9e;   /* Columbia blue */
-  --yellow: #ffcd00; /* Iowa yellow */
-  --ink: #1b1b1b;
+/* =========================
+   BRAND COLORS
+   ========================= */
+:root {
+  --purple: #5b3a8e;   /* NYS Purple */
+  --blue:   #1f4e9e;   /* Columbia Blue */
+  --yellow: #ffcd00;   /* Iowa Gold */
+  --black:  #1b1b1b;
 
-  --bg: #ffffff;
-  --muted: rgba(27,27,27,.68);
-
-  --max: 980px;
-  --radius: 14px;
-
-  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --max-width: 960px;
 }
 
-/* ===== Base ===== */
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family: var(--font);
-  color: var(--ink);
-  background: var(--bg);
+/* =========================
+   BASE
+   ========================= */
+body {
+  margin: 0;
+  background: #ffffff;        /* WHITE BACKGROUND */
+  color: var(--black);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
-.container{
-  max-width: var(--max);
+.container {
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 22px;
+  padding: 24px;
 }
 
-/* ===== Header ===== */
-.header{
-  background: #fff;
-}
-
-.page-title{
-  margin: 0;
-  padding-top: 6px;
+/* =========================
+   TITLE
+   ========================= */
+.page-title {
   font-size: 34px;
-  line-height: 1.15;
   font-weight: 900;
-  color: var(--purple);
-  letter-spacing: .2px;
+  color: var(--purple);       /* Purple title */
+  margin-bottom: 10px;
 }
 
-.subtitle{
-  font-weight: 800;
-  font-size: 26px;
-  color: rgba(91,58,142,.92);
-}
-
-/* blue divider like your sketch */
-.blue-rule{
+/* Blue divider line */
+.blue-rule {
   height: 3px;
   background: var(--blue);
-  margin: 18px 0 18px;
-  border-radius: 999px;
+  margin: 25px 0;
+  border-radius: 3px;
 }
 
-/* ===== Logos row ===== */
-.logo-row{
-  display:flex;
-  gap: 28px;
-  align-items:center;
+/* =========================
+   LOGOS
+   ========================= */
+.logo-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 10px 0 6px;
+  margin-bottom: 25px;
 }
 
-.logo-item{
-  display:flex;
-  align-items:center;
+.logo-item {
+  display: flex;
+  align-items: center;
   gap: 10px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--blue);
 }
 
-.logo-item img{
+.logo-item img {
   height: 36px;
-  width: auto;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 10px;
-  padding: 6px 10px;
 }
 
-/* ===== Welcome + Jump links ===== */
-.welcome{
-  margin-top: 14px;
+/* =========================
+   SECTIONS
+   ========================= */
+.block {
+  margin: 45px 0;              /* More spacing between sections */
+  padding-left: 15px;
+  border-left: 5px solid var(--blue);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--purple);        /* Purple headings */
+  margin-bottom: 8px;
+}
+
+.desc {
+  color: #333;
   margin-bottom: 12px;
 }
 
-.welcome-text{
-  font-size: 17px;
-  margin: 0 0 14px;
-  color: var(--ink);
-}
-
-.jump{
-  display:flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.jump a{
-  text-decoration: none;
-  color: var(--purple);
+/* =========================
+   BUTTONS
+   ========================= */
+.btn {
+  display: inline-block;
+  background: var(--yellow);   /* Yellow button */
+  color: #111;                 /* Dark text on yellow */
   font-weight: 800;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(91,58,142,.28);
-  background: rgba(91,58,142,.06);
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
 }
 
-.jump a:hover{
-  background: rgba(91,58,142,.10);
-  border-color: rgba(91,58,142,.45);
+.btn:hover {
+  opacity: 0.9;
 }
 
-/* ===== Content blocks ===== */
-.block{
-  margin: 26px 0;
-  padding-left: 14px;
-  border-left: 5px solid var(--blue); /* blue side line */
-}
-
-h2{
-  margin: 0 0 8px;
-  font-size: 22px;
-  font-weight: 900;
+/* Optional outline button */
+.btn-outline {
+  background: #ffffff;
   color: var(--purple);
+  border: 2px solid var(--purple);
 }
 
-.desc{
-  margin: 0 0 10px;
-  color: var(--muted);
+/* =========================
+   LINKS
+   ========================= */
+a {
+  color: var(--blue);
+  font-weight: 600;
 }
 
-/* ===== Buttons ===== */
-.btn{
-  display:inline-block;
-  background: var(--yellow);
-  color: #111;
-  font-weight: 900;
-  text-decoration:none;
-  padding: 10px 16px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(0,0,0,.14);
+a:hover {
+  text-decoration: underline;
 }
 
-.btn:hover{
-  filter: brightness(.97);
-}
-
-.btn.btn-outline{
-  background: #fff;
-  color: var(--purple);
-  border: 1px solid rgba(91,58,142,.35);
-}
-
-/* ===== Contact / footer ===== */
-.contact-line{
-  margin: 6px 0 0;
-  color: var(--ink);
-}
-
-.footer{
-  margin-top: 26px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(31,78,158,.22);
-  color: var(--muted);
+/* =========================
+   FOOTER
+   ========================= */
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid var(--blue);
+  color: #555;
   font-size: 0.95em;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 640px){
-  .page-title{ font-size: 28px; }
-  .subtitle{ font-size: 22px; }
-  .logo-item img{ height: 30px; }
 }
