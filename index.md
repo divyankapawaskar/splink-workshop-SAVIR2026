@@ -1,18 +1,37 @@
+# PROBABILISTIC LINKAGE USING SPLINK 
+# WITH APPLICATION TO CRASH OUTCOMES DATA EVALUATION SYSTEM (CODES)
+#SAVIR2026
+
 # Workshop Portal
+Welcome! This page is the central hub for all workshop materials.
 
-Welcome! This site will serve as the central hub for all workshop materials.
-
----
-
-## During the Workshop
-
-- Setup instructions → `/setup`
-- Download datasets → `/data`
-- Access demo code → `/code`
-- View slides → `/slides`
+## Jump to a section
+- [Setup](#setup)
+- [Datasets](#datasets)
+- [Code](#code)
+- [Slides](#slides)
+- [Resources](#resources)
+- [Contact](#contact)
 
 ---
 
-## After the Workshop
+## Setup
+<a id="setup"></a>
 
-All materials will remain here for future reference.
+**Environment setup**
+- Step-by-step guide (Google Doc): **PASTE LINK HERE**
+- Troubleshooting notes: **PASTE LINK HERE** (optional)
+
+---
+## Datasets
+<a id="datasets"></a>
+
+## Code
+<a id="code"></a>
+
+**Full code (Google Doc):** **PASTE LINK HERE**
+
+### Example snippet (copy/paste)
+```r
+# Paste a small snippet here when ready
+print("Hello workshop")
