@@ -136,34 +136,3 @@ a:hover {
   color: #555;
   font-size: 0.95em;
 }
-
-/* ===== Header layout ===== */
-.header-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.header-left {
-  flex: 1;
-}
-
-/* Conference logo (top right) */
-.conference-logo {
-  max-height: 70px;
-  width: auto;
-}
-
-/* Mobile adjustment */
-@media (max-width: 700px) {
-  .header-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .conference-logo {
-    margin-top: 10px;
-    max-height: 55px;
-  }
-}
