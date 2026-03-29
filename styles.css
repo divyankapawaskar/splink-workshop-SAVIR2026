@@ -104,6 +104,42 @@ body::before {
 }
 
 /* =========================
+   PRESENTER STRIP
+   ========================= */
+.presenter-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.08s forwards;
+}
+
+.presenter-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--purple-light);
+  margin-right: 4px;
+}
+
+.presenter-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-600);
+}
+
+.presenter-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--yellow);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* =========================
    DIVIDER
    ========================= */
 .blue-rule {
@@ -165,8 +201,9 @@ body::before {
 .welcome-text {
   font-size: 17px;
   color: #444;
-  max-width: 620px;
-  line-height: 1.7;
+  max-width: 680px;
+  line-height: 1.75;
+  margin-bottom: 12px;
 }
 
 .welcome-text strong {
@@ -174,6 +211,13 @@ body::before {
   color: var(--purple);
   font-family: 'DM Serif Display', Georgia, serif;
   font-weight: 400;
+}
+
+.welcome-sub {
+  font-size: 15.5px;
+  color: var(--gray-600);
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 /* =========================
@@ -240,7 +284,30 @@ body::before {
   color: var(--gray-600);
   font-size: 15.5px;
   margin-bottom: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
+  max-width: 620px;
+}
+
+/* =========================
+   PREREQUISITE TAGS
+   ========================= */
+.prereq-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.prereq-tag {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--purple-dark);
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  padding: 4px 12px;
+  border-radius: 6px;
 }
 
 /* =========================
@@ -292,26 +359,45 @@ body::before {
 }
 
 /* =========================
-   CONTACT
+   CONTACT CARDS
    ========================= */
-.contact-line {
+.contact-card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.contact-card {
+  padding: 16px 18px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--blue);
+  background: var(--white);
+  box-shadow: 0 3px 10px rgba(31,78,158,0.06);
+}
+
+.contact-name {
+  font-weight: 700;
   font-size: 15.5px;
-  color: #444;
-  padding: 6px 0;
-  line-height: 1.6;
-}
-
-.contact-line strong {
   color: var(--black);
+  margin-bottom: 4px;
 }
 
-.contact-line a {
-  color: var(--blue);
+.contact-card a {
+  font-size: 13.5px;
   font-weight: 600;
+  color: var(--blue);
   text-decoration: none;
+  word-break: break-all;
 }
 
-.contact-line a:hover {
+.contact-card a:hover {
   text-decoration: underline;
 }
 
@@ -360,4 +446,6 @@ a:hover {
   .header { padding: 40px 0 0; }
   .logo-row { gap: 12px; }
   .block { padding: 22px; margin: 28px 0; }
+  .contact-card-row { grid-template-columns: 1fr; }
+  .presenter-strip { gap: 6px 10px; }
 }
