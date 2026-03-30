@@ -398,6 +398,7 @@ a.logo-item:hover {
 }
 
 .contact-card a {
+  display: block;
   font-size: 13.5px;
   font-weight: 600;
   color: var(--blue);
@@ -409,16 +410,25 @@ a.logo-item:hover {
   text-decoration: underline;
 }
 
-.linkedin-link {
-  display: block;
+.contact-card .linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   margin-top: 6px;
   font-size: 13px;
   font-weight: 700;
   color: var(--purple) !important;
+  word-break: normal;
 }
 
-.linkedin-link:hover {
+.contact-card .linkedin-link:hover {
   color: var(--purple-dark) !important;
+}
+
+.linkedin-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 /* =========================
